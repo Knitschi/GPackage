@@ -12,3 +12,4 @@ namespace g
 
 
 namespace{} 
+namespace{} 
