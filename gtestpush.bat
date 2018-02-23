@@ -1,11 +1,11 @@
 
 git pull
 
-echo namespace{} >> a.cpp
+echo namespace{} >> g.cpp
 git commit . -m"dummy edit"
-echo namespace{} >> a.cpp
+echo namespace{} >> g.cpp
 git commit . -m"dummy edit"
-echo namespace{} >> a.cpp
+echo namespace{} >> g.cpp
 git commit . -m"dummy edit"
 
 git push

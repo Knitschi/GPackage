@@ -1,8 +1,8 @@
-#include <DPackage/d.h>
+#include <GPackage/g.h>
 
-namespace d
+namespace g
 {
-    void dFunction()
+    void gFunction()
     {
         
     }
