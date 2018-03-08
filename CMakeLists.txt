@@ -13,9 +13,12 @@ cpfInitPackageProject(
 
 ############################################## Define code files ###################################################
 
+set( PACKAGE_PUBLIC_HEADER
+	function.h
+)
+
 set( PACKAGE_PRODUCTION_FILES
 	function.cpp
-	function.h
 )
 
 set( PACKAGE_FIXTURE_FILES
@@ -46,6 +49,7 @@ cpfAddPackage(
 	TYPE					LIB
 	BRIEF_DESCRIPTION		${briefDescription}
 	LONG_DESCRIPTION		${longDescription}
+	PUBLIC_HEADER			${PACKAGE_PUBLIC_HEADER}
 	PRODUCTION_FILES		${PACKAGE_PRODUCTION_FILES}
 	FIXTURE_FILES			${PACKAGE_FIXTURE_FILES}
 	TEST_FILES				${PACKAGE_TEST_FILES}
