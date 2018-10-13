@@ -1,4 +1,4 @@
-include(cpfAddPackage)
+include(cpfAddCppPackage)
 
 # define namespace name for module
 set( PACKAGE_NAMESPACE g )
@@ -34,16 +34,13 @@ set(PACKAGE_LINKED_LIBRARIES
 set(PACKAGE_LINKED_TEST_LIBRARIES
 )
 
-set( qtPlatformPlugins 
-)
-
 set( archiveDevPackageOptions
 	DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_DEVELOPER
 	DISTRIBUTION_PACKAGE_FORMATS 		7Z
 )
 
 ############################################## Add Package #################################
-cpfAddPackage( 
+cpfAddCppPackage( 
 	PACKAGE_NAME			${PACKAGE_NAME}
 	PACKAGE_NAMESPACE		${PACKAGE_NAMESPACE}
 	TYPE					LIB
@@ -55,6 +52,5 @@ cpfAddPackage(
 	TEST_FILES				${PACKAGE_TEST_FILES}
 	LINKED_LIBRARIES		${PACKAGE_LINKED_LIBRARIES}
 	LINKED_TEST_LIBRARIES	${PACKAGE_LINKED_TEST_LIBRARIES}
-	PLUGIN_DEPENDENCIES		${qtPlatformPlugins}
 	DISTRIBUTION_PACKAGES 	${archiveDevPackageOptions}
 )
