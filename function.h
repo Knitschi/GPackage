@@ -4,9 +4,9 @@
 
 namespace g
 {
-    inline void function()
-    {
-        std::cout << "GPackage function()" << "\n";
-    }
+	inline void function()
+	{
+		std::cout << "GPackage function()"
+				  << "\n";
+	}
 }
-
