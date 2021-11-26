@@ -22,4 +22,4 @@ cpfAddCppPackageComponent(
 	ENABLE_PACKAGE_DOX_FILE_GENERATION TRUE
 )
 
-finalizePackageProject()
+cpfFinalizePackageProject()
