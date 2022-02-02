@@ -10,4 +10,3 @@ namespace g
 				  << "\n";
 	}
 }
-
